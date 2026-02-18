@@ -9,7 +9,34 @@ import safari from "./Icons/safari.png"
 import setting from "./Icons/Settings.png"
 import terminal from "./Icons/terminal.png"
 
-export { background, contact, files, Folder, photos, safari, setting, terminal }
+export {background ,Folder}
+
+export const footerIcons = [
+    {
+        name:"Contact",
+        icon:contact
+    },
+    {
+        name:"Projects",
+        icon:files
+    },
+    {
+        name:"Certifications",
+        icon: photos
+    },
+    {
+        name:"Profile",
+        icon:setting
+    },
+    {
+        name:"Projects",
+        icon:safari
+    },
+    {
+        name:"Terminal",
+        icon:terminal
+    }
+]
 
 // importing Skills icons 
 
@@ -26,8 +53,13 @@ import react from "./Icons/react.png"
 import linux from "./Icons/Linux.png"
 import gsap from "./Icons/Gsap.png"
 import mui from "./Icons/Mui.png"
-import taiwlind from "./Icons/tailwind.png"
+import tailwind from "./Icons/tailwind.png"
 import daisyUi from "./Icons/Daisy UI.png"
+import github from "./Icons/Github.png"
+import mysql from "./Icons/mysql.png"
+import postman from "./Icons/postman.png"
+import psql from "./Icons/PSql.png"
+import vCode from "./Icons/vscode.png"
 
 // certifications 
 
@@ -57,7 +89,67 @@ export const softSkills = [
 
 // techncal skills 
 
-export const techSkills = [
+export const programming_lang = [
+    {
+        id:1,
+        name:"Python",
+        icon:python
+    },
+    {
+        id:2,
+        name:"JAVA",
+        icon:java
+    },
+    {
+        id:3,
+        name:"Java Script",
+        icon:js
+    },
+    {
+        id:4,
+        name:"Type Script",
+        icon:ts
+    },
+    {
+        id:5,
+        name:"HTML5",
+        icon:html
+    }
+]
+// front end frameworks
+
+export const frontend_frameworks = [
+    {
+        id:1,
+        name:"React",
+        icon:react
+    },
+    {
+        id:2,
+        name:"Tailwind Css",
+        icon:tailwind
+    },
+    {
+        id:3,
+        name:"Material UI",
+        icon:mui
+    },
+    {
+        id:4,
+        name:"Web Animation With GSAP",
+        icon:gsap
+    },
+    {
+        id:5,
+        name:"Daisy UI",
+        icon:daisyUi
+    },
+
+]
+
+//Backend frameworks
+
+export const backend_frameworks = [
     {
         id:0,
         name:"Express JS",
@@ -65,80 +157,57 @@ export const techSkills = [
     },
     {
         id:1,
-        name:"Git",
-        icon:git
-    },
+        name:"Node JS",
+        icon: node
+    }
+]
+
+//Database management System
+
+export const DBMS = [
     {
-        id:2,
-        name:"HTML",
-        icon:html
-    },
-    {
-        id:3,
-        name:"JAVA",
-        icon:java
-    },
-    {
-        id:4,
-        name:"Java Script",
-        icon:js
-    },
-    {
-        id:5,
+        id:1,
         name:"Mongo DB",
         icon:mongoDb
     },
     {
-        id:6,
-        name:"Node JS",
-        icon:node
-    },
-    {
-        id:7,
-        name:"Python",
-        icon:python
-    },
-    {
-        id:8,
-        name:'Type Script',
-        icon:ts
-    },
-    {
-        id:9,
-        name:'React',
-        icon:react
-    },
-    {
-        id:10,
-        name:"Linux",
-        icon:linux
-    }
-]
-
-// additional library and frameworks
-
-export const others = [
-    {
-        id:0,
-        name:"Tailwind CSS",
-        icon:taiwlind
-    },
-    {
-        id:1,
-        name:"Web Animation With GSAP",
-        icon:gsap
-    },
-    {
         id:2,
-        name:"Material UI",
-        icon:mui
+        name:"My SQL",
+        icon:mysql
     },
     {
         id:3,
-        name:"Daisy UI",
-        icon:daisyUi
+        name:"Poster SQL",
+        icon:psql
+    },
+
+]
+
+//Development Tools
+
+export const dev_tools = [
+    {
+        id:1,
+        name:"Vs Code",
+        icon:vCode
+    },
+    {
+        id:2,
+        name:"Linux",
+        icon:linux
+    },
+    {
+        id:3,
+        name:"Github",
+        icon:github
+    },
+    {
+        id:4,
+        name:"Postman",
+        icon: postman
     }
 ]
+
 
 // java certification
 
@@ -239,3 +308,28 @@ export const c_certificate =[
         image:c_introduction
     }
 ]
+
+//Relevent courseworks
+
+export const rel_courseworks = [
+    "Data Structures And Algorothms",
+    "Database Management",
+    "Software Engineering",
+    "Object-oriented Programming",
+    "Web Development",
+    "System Analysis & Design",
+    "Computer Networking",
+    "Ethical Hacking"
+]
+
+
+export const title_items = [
+    "Finder",
+    "Files",
+    "Edit",
+    "View",
+    "Window",
+    "Help"
+]
+
+

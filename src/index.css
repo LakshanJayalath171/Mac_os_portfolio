@@ -1,1 +1,31 @@
 @import "tailwindcss";
+
+.body{
+    font-family: Roboto;
+    color: white;
+}
+
+p{
+    font-family: Roboto;
+    font-weight: bold;
+    color: white;
+}
+
+.mac{
+
+    background: rgba(255, 255, 255, 0.2);  /* Semi-transparent */
+
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Soft border */
+    backdrop-filter: blur(20px); /* Blur behind the element */
+    -webkit-backdrop-filter: blur(20px); /* Safari support */
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+}
