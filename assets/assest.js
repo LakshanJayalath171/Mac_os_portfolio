@@ -8,8 +8,9 @@ import photos from "./Icons/photos.png"
 import safari from "./Icons/safari.png"
 import setting from "./Icons/Settings.png"
 import terminal from "./Icons/terminal.png"
+import profile from "./Profile/photo_6309939572606963276_y.jpg"
 
-export {background ,Folder}
+export {background ,Folder,profile,files}
 
 export const footerIcons = [
     {
@@ -55,7 +56,7 @@ import gsap from "./Icons/Gsap.png"
 import mui from "./Icons/Mui.png"
 import tailwind from "./Icons/tailwind.png"
 import daisyUi from "./Icons/Daisy UI.png"
-import github from "./Icons/Github.png"
+import Github from "./Icons/Github.png"
 import mysql from "./Icons/mysql.png"
 import postman from "./Icons/postman.png"
 import psql from "./Icons/PSql.png"
@@ -199,7 +200,7 @@ export const dev_tools = [
     {
         id:3,
         name:"Github",
-        icon:github
+        icon:Github
     },
     {
         id:4,
@@ -333,3 +334,39 @@ export const title_items = [
 ]
 
 
+// importing social icons
+import facebook from "./Social icons/facebook.png"
+import github from "./Social icons/github.png"
+import instagram from "./Social icons/instagram.png"
+import linkedin from "./Social icons/linkedin.png"
+import threads from "./Social icons/threads.png"
+
+export{github ,instagram,facebook,linkedin,threads,}
+
+export const social = [
+    {
+        id:1,
+        name:'LinkedIn',
+        url:"https://www.linkedin.com/in/lakshan-jayalath-4b7b1931a/",
+        image:linkedin
+    },
+    {
+        id:2,
+        name:"Threads",
+        url:"https://www.threads.com/@lakshan16176?igshid=NTc4MTIwNjQ2YQ==",
+        image:threads
+    },
+    {
+        id:3,
+        name:"Instagram",
+        url:"https://www.instagram.com/lakshan16176?igsh=MThieGUyN2htMGFrdg%3D%3D&utm_source=qr",
+        image:instagram
+    },
+    {
+        id:4,
+        name:"Github",
+        url:"https://github.com/LakshanJayalath171",
+        image:github
+    }
+
+]

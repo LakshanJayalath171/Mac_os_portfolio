@@ -17,24 +17,24 @@ const Title = () => {
                 {title_items.map((items,index)=>(
                     <div key={index} className="flex justify-between gap-3">
                         <div>
-                            <p>{items}</p>
+                            <h4 className="poppins-extrabold text-white text-[15px]">{items}</h4>
                         </div>
                     </div>
                 ))}
 
             </div>
 
-            <div className="text-white flex items-center justify-between gap-3">
-                <div><AirplayIcon/></div>
-                <div><ContactlessIcon/></div>
-                <div><WifiIcon/></div>
+            <div className="text-white flex items-center justify-between gap-3 p-[1px]">
+                <div><AirplayIcon sx={{ fontSize: 20 }} /></div>
+                <div><ContactlessIcon sx={{ fontSize: 20 }}/></div>
+                <div><WifiIcon sx={{ fontSize: 20 }}/></div>
                 <div className='rotate-270'>
-                    <Battery50Icon/>
+                    <Battery50Icon sx={{ fontSize: 20 }}/>
                 </div>
-                <div><SearchSharpIcon/></div>
+                <div ><SearchSharpIcon sx={{ fontSize: 20 }}/></div>
 
-                <div>
-                    <p>mon june 22  7:22 AM</p>
+                <div className="mr-3">
+                    <h4 className="poppins-extrabold text-[15px]">Mon June 22  7:22 AM</h4>
                 </div>
             </div>
 
