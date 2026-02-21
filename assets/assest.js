@@ -10,7 +10,19 @@ import setting from "./Icons/Settings.png"
 import terminal from "./Icons/terminal.png"
 import profile from "./Profile/photo_6309939572606963276_y.jpg"
 
-export {background ,Folder,profile,files}
+export {background ,Folder,profile,files,photos}
+
+//color vairents
+
+const colorVariants = {
+    blue: "bg-blue-500",
+    green: "bg-green-500",
+    red: "bg-red-500",
+    purple: "bg-purple-500",
+    amber:"bg-amber-500",
+
+};
+
 
 export const footerIcons = [
     {
@@ -218,14 +230,16 @@ export const java_certificates = [
         name:"Intoduction To JAVA Programming",
         Organization:"Sololearn",
         image:intro_java,
-        is_date:""
+        is_date:"",
+        color:colorVariants.blue,
     },
     {
         id:1,
         name:"JAVA Intermediate",
         Organization:"Sololearn",
         image:java_inter,
-        is_date:""
+        is_date:"",
+        color:colorVariants.purple,
     },
     
 ]
@@ -238,14 +252,16 @@ export const python_certificate =[
         name:'Python For Begginers',
         Organization:"University Of Moratuwa",
         image:python_beg,
-        is_date:""
+        is_date:"",
+        color:colorVariants.red,
     },
     {
         id:1,
         name:"Python Developer",
         Organization:"Sololearn",
         image:python_dev,
-        is_date:""
+        is_date:"",
+        color:colorVariants.green,
     },
 ]
 
@@ -257,7 +273,8 @@ export const Ai = [
         name:"Prompt Engineering",
         Organization:"Sololearn",
         image:prompt_eng,
-        is_date:""
+        is_date:"",
+        color:colorVariants.amber,
     }
 ]
 
@@ -269,21 +286,24 @@ export const web_dev_certificate= [
         name:"Intoduction To HTML",
         Organization:"Sololearn",
         image:intro_html,
-        is_date:""
+        is_date:"",
+        color:colorVariants.red,
     },
     {
         id:1,
         name:"Web Design For Begginers",
         Organization:"University Of Moratuwa",
         image:webdesign_beginers,
-        is_date:""
+        is_date:"",
+        color:colorVariants.amber,
     },
     {
         id:2,
         name:"Front End Developer",
         Organization:"University Of Moratuwa",
         image:frontEnd,
-        is_date:""
+        is_date:"",
+        color:colorVariants.blue,
     }
 ]
 
@@ -295,7 +315,8 @@ export const Js_certificate = [
         name:"Java Script Intermediate",
         Organization:"Sololearn",
         image:js_intermediate,
-        is_date:""
+        is_date:"",
+        color:colorVariants.red,
     }
 ]
 
@@ -306,7 +327,8 @@ export const c_certificate =[
         id:0,
         name:"Introduction To C Programming",
         Organization:"Sololearn",
-        image:c_introduction
+        image:c_introduction,
+        color:colorVariants.amber,
     }
 ]
 
