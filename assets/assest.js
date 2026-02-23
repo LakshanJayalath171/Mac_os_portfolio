@@ -10,7 +10,7 @@ import setting from "./Icons/Settings.png"
 import terminal from "./Icons/terminal.png"
 import profile from "./Profile/photo_6309939572606963276_y.jpg"
 
-export {background ,Folder,profile,files,photos}
+export {background ,Folder,profile,files,photos,setting}
 
 //color vairents
 

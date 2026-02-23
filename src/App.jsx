@@ -2,6 +2,7 @@ import React from 'react'
 import Title from "./Components/Title.jsx";
 import Taskbar from "./Components/Taskbar.jsx";
 import Window from "./Components/Window.jsx";
+import Settings from "./Components/Settings.jsx";
 
 
 
@@ -13,7 +14,12 @@ const App = () => {
           <div className="absolute bottom-0 left-[450px]">
               <Taskbar/>
           </div>
-          <Window/>
+          {/*<div>*/}
+          {/*    <Window/>*/}
+          {/*</div>*/}
+          <div>
+              <Settings/>
+          </div>
       </div>
     </div>
   )
