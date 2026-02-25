@@ -10,7 +10,7 @@ import setting from "./Icons/Settings.png"
 import terminal from "./Icons/terminal.png"
 import profile from "./Profile/photo_6309939572606963276_y.jpg"
 
-export {background ,Folder,profile,files,photos,setting}
+export {background ,Folder,profile,files,photos,setting,contact}
 
 //color vairents
 
@@ -362,6 +362,7 @@ import github from "./Social icons/github.png"
 import instagram from "./Social icons/instagram.png"
 import linkedin from "./Social icons/linkedin.png"
 import threads from "./Social icons/threads.png"
+import gmail from "./Social icons/gmail.png"
 
 export{github ,instagram,facebook,linkedin,threads,}
 
@@ -389,6 +390,12 @@ export const social = [
         name:"Github",
         url:"https://github.com/LakshanJayalath171",
         image:github
+    },
+    {
+        id:5,
+        name:"Email",
+        url:"lakshanjayalath171@gmail.com",
+        image:gmail,
     }
 
 ]

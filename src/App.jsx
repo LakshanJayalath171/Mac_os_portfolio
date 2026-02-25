@@ -3,6 +3,7 @@ import Title from "./Components/Title.jsx";
 import Taskbar from "./Components/Taskbar.jsx";
 import Window from "./Components/Window.jsx";
 import Settings from "./Components/Settings.jsx";
+import Contact from "./Components/Contact.jsx";
 
 
 
@@ -18,7 +19,11 @@ const App = () => {
           {/*    <Window/>*/}
           {/*</div>*/}
           <div>
-              <Settings/>
+              {/*<Settings/>*/}
+          </div>
+
+          <div>
+              <Contact/>
           </div>
       </div>
     </div>
