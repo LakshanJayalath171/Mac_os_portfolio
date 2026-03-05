@@ -26,27 +26,27 @@ const colorVariants = {
 
 export const footerIcons = [
     {
-        name:"Contact",
+        id:"contact",
         icon:contact
     },
     {
-        name:"Projects",
+        id:"files",
         icon:files
     },
     {
-        name:"Certifications",
+        id:"photos",
         icon: photos
     },
     {
-        name:"Profile",
+        id:"settings",
         icon:setting
     },
     {
-        name:"Projects",
+        id:"safari",
         icon:safari
     },
     {
-        name:"Terminal",
+        id:"terminal",
         icon:terminal
     }
 ]
@@ -54,7 +54,7 @@ export const footerIcons = [
 // importing Skills icons 
 
 import express from "./Icons/Express.png"
-import git from "./Icons/git.png"
+
 import html from "./Icons/html.png"
 import java from "./Icons/java.png"
 import js from "./Icons/JS.png"
