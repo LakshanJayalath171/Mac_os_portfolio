@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import AppleIcon from '@mui/icons-material/Apple';
 import {title_items} from "../../assets/assest.js";
 import AirplayIcon from '@mui/icons-material/Airplay';
@@ -7,7 +7,19 @@ import WifiIcon from '@mui/icons-material/Wifi';
 import Battery50Icon from '@mui/icons-material/Battery50';
 import SearchSharpIcon from '@mui/icons-material/SearchSharp';
 
+
 const Title = () => {
+
+    const [time, setTime] = useState(null);
+
+    useEffect(() => {
+        const interval = setInterval(()=>{
+            setTime(Date.now());
+        },1000)
+
+        return ()=> clearInterval(interval)
+    }, []);
+
     return (
         <div className="flex items-center justify-between p-[1px] bg-white/20 backdrop-blur-2xl rounded-[5px] border border-white/30 shadow-2xl">
 
@@ -34,7 +46,10 @@ const Title = () => {
                 <div ><SearchSharpIcon sx={{ fontSize: 20 }}/></div>
 
                 <div className="mr-3">
-                    <h4 className="poppins-extrabold text-[15px]">Mon June 22  7:22 AM</h4>
+                    <h4 className="poppins-extrabold text-[15px]">{new Date(time).toLocaleTimeString([],{
+                        hour:'2-digit',
+                        minute:"2-digit"
+                    })}</h4>
                 </div>
             </div>
 
