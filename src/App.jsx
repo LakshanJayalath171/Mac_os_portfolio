@@ -6,6 +6,7 @@ import Settings from "./Components/Settings.jsx";
 import Contact from "./Components/Contact.jsx";
 import {Draggable} from "gsap/Draggable";
 import gsap from 'gsap'
+import Welcome from "./Components/Welcome.jsx";
 
 gsap.registerPlugin(Draggable)
 const App = () => {
@@ -20,8 +21,12 @@ const App = () => {
           {/*    <Window/>*/}
           {/*</div>*/}
           <div>
-              <Settings/>
+              {/*<Settings/>*/}
           </div>
+
+         <div className="absolute items-center justify-center top-1/2 right-1/4 z-0">
+             <Welcome/>
+         </div>
 
           <div>
               {/*<Contact/>*/}

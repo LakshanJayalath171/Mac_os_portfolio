@@ -52,7 +52,7 @@ const Settings = () => {
 
                 <div className="mac relative m-2 p-2 rounded-[8px] absolute bottom-0 w-[240px] left-0 mt-24 flex items-start justify-start">
                     <img src={profile} className="w-6 h-6 rounded-full"/>
-                    <p className="text-[15px] poppins-bold ml-3">Lakshan Jayalath</p>
+                    <p className="text-[15px] poppins-bold ml-3 italianno-regular">Lakshan Jayalath</p>
                 </div>
 
             </div>
