@@ -1,6 +1,7 @@
 // icons 
 
 import background from "./Icons/background.jpg"
+import wallpaper from "./Icons/wallpaper.png"
 import contact from "./Icons/Contact.png"
 import files from "./Icons/Files.png"
 import Folder from "./Icons/Folder.png"
@@ -9,6 +10,7 @@ import safari from "./Icons/safari.png"
 import setting from "./Icons/Settings.png"
 import terminal from "./Icons/terminal.png"
 import profile from "./Profile/photo_6309939572606963276_y.jpg"
+import mode from "./Icons/mode.svg"
 
 export {background ,Folder,profile,files,photos,setting,contact}
 
@@ -23,6 +25,31 @@ const colorVariants = {
 
 };
 
+// sidebar icons
+import work from '../assets/Icons/work.svg'
+import trash from '../assets/Icons/trash.svg'
+import atom from '../assets/Icons/atom.svg'
+import resume from '../assets/Icons/file.svg'
+import aboutMe from '../assets/Icons/info.svg'
+
+export const sidebarIcons = [
+    {
+        name:"Work",
+        icon:work
+    },
+    {
+        name:"Trash",
+        icon:trash
+    },
+    {
+        name:"Resume",
+        icon:resume
+    },
+    {
+        name:"About me",
+        icon:aboutMe
+    }
+]
 
 export const footerIcons = [
     {

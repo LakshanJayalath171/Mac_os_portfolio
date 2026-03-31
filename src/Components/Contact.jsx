@@ -10,6 +10,7 @@ import {social} from "../../assets/assest.js";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import IosShareIcon from "@mui/icons-material/IosShare";
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
+import WindowWrapper from "../hoc/WindowWrapper.jsx";
 
 
 const Contact = () => {
@@ -60,8 +61,8 @@ const Contact = () => {
                     {/*Mapped items from the array */}
                     <div className="text-left mt-5">
 
-                        {social.map((items,i)=>(
-                            <div onClick={()=>setpannel(items.id)} className="p-2 pt-1 pb-0 flex items-start gap-2 cursor-pointer" key={items.id}>
+                        {social.map((items,index)=>(
+                            <div onClick={()=>setpannel(items.id)} className="p-2 pt-1 pb-0 flex items-start gap-2 cursor-pointer" key={index}>
                                 <img className="w-5 h-5" src={items.image}/><p className="text-shadow-black font-semibold text-[15px] poppins-bold">{items.name}</p>
 
                             </div>
@@ -146,4 +147,7 @@ const Contact = () => {
         </div>
     )
 }
-export default Contact
+
+const ContactWindow = WindowWrapper(Contact,"contact")
+
+export default ContactWindow

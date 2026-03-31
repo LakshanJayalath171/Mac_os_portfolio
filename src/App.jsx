@@ -1,36 +1,40 @@
 import React from 'react'
 import Title from "./Components/Title.jsx";
 import Taskbar from "./Components/Taskbar.jsx";
-import Window from "./Components/Window.jsx";
-import Settings from "./Components/Settings.jsx";
-import Contact from "./Components/Contact.jsx";
+
 import {Draggable} from "gsap/Draggable";
 import gsap from 'gsap'
 import Welcome from "./Components/Welcome.jsx";
+import windowWrapper from "./hoc/WindowWrapper.jsx";
+import Contact from "./Components/Contact.jsx";
+import Settings from "./Components/Settings.jsx";
+import Photos from "./Components/Photos.jsx";
 
 gsap.registerPlugin(Draggable)
+
 const App = () => {
   return (
     <div>
-      <div className=" relative min-h-screen min-w-screen bg-[url(assets/Icons/background.jpg)] bg-cover bg-center bg-no-repeat">
+      <div className=" relative min-h-screen min-w-screen bg-[url(assets/Icons/wallpaper.png)] bg-cover inset-0 z-0">
           <Title/>
           <div className="absolute bottom-0 left-[450px]">
               <Taskbar/>
           </div>
-          {/*<div>*/}
-          {/*    <Window/>*/}
-          {/*</div>*/}
-          <div>
-              {/*<Settings/>*/}
-          </div>
 
-         <div className="absolute items-center justify-center top-1/2 right-1/4 z-0">
+          <div className="absolute items-center justify-center top-1/2 right-[100px] z-10">
              <Welcome/>
-         </div>
+          </div>
 
           <div>
-              {/*<Contact/>*/}
+              <Contact/>
+              <Settings/>
+
           </div>
+
+          <div>
+              <Photos/>
+          </div>
+
       </div>
     </div>
   )

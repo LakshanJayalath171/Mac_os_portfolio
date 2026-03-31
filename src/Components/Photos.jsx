@@ -12,10 +12,11 @@ import Cards from "./Cards.jsx";
 
 //importing certifications
 import {python_certificate,java_certificates,Js_certificate,Ai,web_dev_certificate,} from "../../assets/assest.js";
+import WindowWrapper from "../hoc/WindowWrapper.jsx";
 
 
 
-const Window = () => {
+const Photos = () => {
 
     const [state,setState] = useState(1)
     const [contact ,setContact] = useState(true);
@@ -89,16 +90,7 @@ const Window = () => {
                    </div>
                </div>
                 <hr className="text-gray-500 "/>
-                {/*contact section */}
-                {contact?<div className="flex items-center justify-center">
-
-                    {social.map((items,index)=>(
-                        <Contact name={items.name} image={items.image} url={items.url}/>
-                    ))}
-
-
-                </div>:<></>}
-
+                
 
                 {/*Detail section */}
 
@@ -188,4 +180,6 @@ const Window = () => {
         </div>
     )
 }
-export default Window
+
+const phototsWindow = WindowWrapper(Photos,'photos')
+export default phototsWindow

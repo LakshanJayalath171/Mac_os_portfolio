@@ -1,8 +1,6 @@
 import React, {Fragment} from 'react'
-import SearchSharpIcon from "@mui/icons-material/SearchSharp";
+
 import {
-    footerIcons,
-    photos,
     profile,
     setting
 } from "../../assets/assest.js";
@@ -11,49 +9,16 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import IosShareIcon from "@mui/icons-material/IosShare";
 import {softSkills,programming_lang,dev_tools,frontend_frameworks,backend_frameworks,DBMS,rel_courseworks} from "../../assets/assest.js";
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import WindowWrapper from "../hoc/WindowWrapper.jsx";
+import Sidebar from "./Sidebar.jsx";
 
 
 
 const Settings = () => {
     return (
-        <div className='mac flex relative h-[400px] w-[700px] rounded-[8px]'>
-            {/*first division */}
-            <div className="flex-1 rounded-2xl">
-
-                <div className='p-4 flex items-center '>
-                    <div className="w-3 h-3 rounded-full bg-red-600 ml-2"></div>
-                    <div className="w-3 h-3 rounded-full bg-amber-600 ml-2"></div>
-                    <div className="w-3 h-3 rounded-full bg-green-800 ml-2"></div>
-                </div>
-
-                <div className="relative">
-
-                    <div>
-                        <SearchSharpIcon className="absolute left-4 top-0"/>
-                        <input className="w-60 ml-3 relative mr-3 rounded-[5px] h-6 border-none outline-none mac placeholder:text-sm py-2" />
-                    </div>
-
-                    <div className="text-left mt-5">
-
-                        {footerIcons.map((items,i)=>(
-                            <div className="p-2 pt-1 pb-0 flex items-start gap-2 cursor-pointer" key={i}>
-                                <img className="w-5 h-5" src={items.icon}/><p className="text-shadow-black font-semibold text-[15px] poppins-bold">{items.name}</p>
-
-                            </div>
-                        ))}
-
-                    </div>
-
-                </div>
-
-
-
-                {/*//bottom profile section*/}
-
-                <div className="mac relative m-2 p-2 rounded-[8px] absolute bottom-0 w-[240px] left-0 mt-24 flex items-start justify-start">
-                    <img src={profile} className="w-6 h-6 rounded-full"/>
-                    <p className="text-[15px] poppins-bold ml-3 italianno-regular">Lakshan Jayalath</p>
-                </div>
+        <div className='mac flex relative h-[400px] w-[700px] rounded-[8px] overflow-hidden'>
+            <div className="flex-1">
+                <Sidebar/>
 
             </div>
 
@@ -222,4 +187,6 @@ const Settings = () => {
         </div>
     )
 }
-export default Settings
+
+const settingsWindow = WindowWrapper(Settings,'settings')
+export default settingsWindow

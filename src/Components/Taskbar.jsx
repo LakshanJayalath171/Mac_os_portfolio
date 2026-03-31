@@ -73,6 +73,7 @@ const Taskbar = () => {
         } else {
             open_window(app.id);
         }
+        console.log(windows)
     };
 
     return (

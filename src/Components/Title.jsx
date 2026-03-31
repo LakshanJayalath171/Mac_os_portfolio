@@ -29,7 +29,7 @@ const Title = () => {
                 {title_items.map((items,index)=>(
                     <div key={index} className="flex justify-between gap-3">
                         <div>
-                            <h4 className="poppins-extrabold text-white text-[15px]">{items}</h4>
+                            <h4 className="poppins-regular text-white text-[15px]">{items}</h4>
                         </div>
                     </div>
                 ))}

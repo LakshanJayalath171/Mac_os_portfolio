@@ -85,7 +85,7 @@ const Welcome = () => {
     return (
         <section id="welcome" style={{ fontFamily: "Inter" }}>
             <h4 ref={subtitleRef} className="">
-                {renderText("I'm Lakshan. Welcome to my", "text-blue-50 cursor-pointer", 400)}
+                {renderText("I'm Lakshan. Welcome to my", "text-2xl text-blue-50 cursor-pointer", 400)}
             </h4>
 
             <h3
