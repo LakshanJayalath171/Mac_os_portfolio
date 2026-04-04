@@ -1,10 +1,11 @@
 import React from 'react'
 import WindowControls from "./WindowControls.jsx";
-import {sidebarIcons} from "../../assets/assest.js";
+import {projects, sidebarIcons} from "../../assets/assest.js";
+import {Folder} from "../../assets/assest.js"
 
 const Sidebar = () => {
     return (
-        <div>
+        <div >
             <div className='w-full'>
                 <WindowControls/>
                 <hr className='w-full ml-2 mr-2 text-gray-600' />
@@ -22,6 +23,19 @@ const Sidebar = () => {
                         </div>
                     </div>
                 ))}
+            </div>
+
+            <div>
+                <p className="poppins-bold text-gray-600 text-[12px] ml-2 mt-3">Navigate</p>
+
+                <div className="mt-3 ml-4">
+                    {projects.map((items,index)=>(
+                        <div className='flex items-center gap-1 m-2'>
+                            <img src={Folder} className="w-4 h-4 "/>
+                            <p className="text-[12px]">{items.name.slice(0,9)}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     )

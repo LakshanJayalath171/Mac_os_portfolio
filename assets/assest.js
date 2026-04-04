@@ -426,3 +426,58 @@ export const social = [
     }
 
 ]
+
+//projects
+
+export const projects = [
+    {
+        id:1,
+        name:"Realtime Chat Application",
+        techStack:'MERN Stack',
+        description:"I created the realtime chat application using MERN stack. UI created with the React framework" +
+            "with type script. Node and Express run the backend and mongoDB gives the database support." +
+            "Additionally i use Soket.io to implemet a realtime messaging feature. It gives the realtime chat messaging withou" +
+            "refresh web browser.Also i use the bcryptJs for encrypt user password and use JWT(json web token).",
+        githubLink:"http:localhost//3000",
+        video:'video url'
+    },
+    {
+        id:2,
+        name:"Animated Landing Page",
+        techStack:'React + GSAP',
+        description:"I created this project to understand how works web animation with GSAP library. I created the" +
+            "gaming landing page with gsap plugin. The main force of this project is how works web animation. I use " +
+            "scrolltrigger animations , basic GSAP animations like from and to , GSAP timeline animations.",
+        githubLink:"http:localhost//3000",
+        video:'video url'
+    },
+    {
+        id:3,
+        name:"Yotube Clone",
+        techStack:'React',
+        description:"I creted this project usin REACT and youtube API. Its gives a basic youtube features like waich" +
+            "videos , like, comment , share count for video and also subscribers count of channels. UI inspipred by " +
+            "YouTube application and main reason for create that project to understand react compoenent and basic hooks " +
+            "like useState , useEffect. ",
+        githubLink:"http:localhost//3000",
+        video:'videourl'
+    },
+    {
+        id:4,
+        name:"Apple MacOS inspired portfolio",
+        techStack:'React + GSAP',
+        description:"I created a portfolio for showcase my works using React + GSAP. React created the UI and " +
+            "added animations using GSAP library.",
+        githubLink:"http:localhost//3000",
+        video:'video url'
+    },
+    {
+        id:5,
+        name:"Spotify Clone",
+        techStack:'React + Tailwind',
+        description:"I created spotify clone with hard coded data to understand how Works React compoents, taiwind classes" +
+            "and React Router Dom. Implemented all functions to play and pause songs and create playlists. UI inspired from spotify.",
+        githubLink:"http:localhost//3000",
+        video:'video url'
+    }
+]
