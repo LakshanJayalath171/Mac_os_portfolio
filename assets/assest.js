@@ -11,8 +11,9 @@ import setting from "./Icons/Settings.png"
 import terminal from "./Icons/terminal.png"
 import profile from "./Profile/photo_6309939572606963276_y.jpg"
 import mode from "./Icons/mode.svg"
+import share from "./Icons/share.svg"
 
-export {background ,Folder,profile,files,photos,setting,contact}
+export {background ,Folder,profile,mode,files,photos,setting,contact,share}
 
 //color vairents
 
