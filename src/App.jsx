@@ -9,6 +9,7 @@ import windowWrapper from "./hoc/WindowWrapper.jsx";
 import Contact from "./Components/Contact.jsx";
 import Settings from "./Components/Settings.jsx";
 import Photos from "./Components/Photos.jsx";
+import Terminal from "./Components/Terminal.jsx";
 
 gsap.registerPlugin(Draggable)
 
@@ -33,6 +34,10 @@ const App = () => {
 
           <div>
               <Photos/>
+          </div>
+
+          <div>
+              <Terminal/>
           </div>
 
       </div>
