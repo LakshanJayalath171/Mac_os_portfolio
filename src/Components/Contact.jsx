@@ -39,7 +39,7 @@ const Contact = () => {
             {/*First division */}
             <div className="flex-1 ml-2 mr-2 " >
                 <div className="flex justify-between">
-                    <WindowControls/>
+                    <WindowControls target="contact"/>
                     <img src={share} alt="Share"/>
                 </div>
 

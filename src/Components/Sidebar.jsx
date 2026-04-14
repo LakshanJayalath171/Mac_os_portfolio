@@ -3,11 +3,11 @@ import WindowControls from "./WindowControls.jsx";
 import {projects, sidebarIcons} from "../../assets/assest.js";
 import {Folder} from "../../assets/assest.js"
 
-const Sidebar = () => {
+const Sidebar = ({target}) => {
     return (
         <div >
             <div className='w-full'>
-                <WindowControls/>
+                <WindowControls target={target}/>
                 <hr className='w-full ml-2 mr-2 text-gray-600' />
             </div>
 

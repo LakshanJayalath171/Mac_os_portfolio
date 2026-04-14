@@ -24,7 +24,7 @@ const Terminal = () => {
             {/*upper div*/}
             <div className="bg-gray-50 flex w-full rounded-tr-[8px] rounded-tl-[8px]">
                 <div>
-                   <WindowControls/>
+                   <WindowControls target="terminal"/>
                 </div>
                 <div className="w-full h-full flex items-center justify-center ">
                     <BiHome className="text-gray-700 ml-3 mr-3"/>
