@@ -10,10 +10,13 @@ import Contact from "./Components/Contact.jsx";
 import Settings from "./Components/Settings.jsx";
 import Photos from "./Components/Photos.jsx";
 import Terminal from "./Components/Terminal.jsx";
+import Archivements from "./Components/Archivements.jsx";
+import Blogs from "./Components/Blogs.jsx";
 
 gsap.registerPlugin(Draggable)
 
 const App = () => {
+
   return (
     <div>
       <div className=" relative min-h-screen min-w-screen bg-[url(assets/Icons/wallpaper.png)] bg-cover inset-0 z-0">
@@ -38,6 +41,14 @@ const App = () => {
 
           <div>
               <Terminal/>
+          </div>
+
+          <div>
+              <Archivements/>
+          </div>
+
+          <div>
+              <Blogs/>
           </div>
 
       </div>

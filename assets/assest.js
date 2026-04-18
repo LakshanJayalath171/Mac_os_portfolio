@@ -55,27 +55,33 @@ export const sidebarIcons = [
 export const footerIcons = [
     {
         id:"contact",
-        icon:contact
+        icon:contact,
+        name:'Contact'
     },
     {
         id:"files",
-        icon:files
+        icon:files,
+        name:"Archivements"
     },
     {
         id:"photos",
-        icon: photos
+        icon: photos,
+        name:"Certifications"
     },
     {
         id:"settings",
-        icon:setting
+        icon:setting,
+        name:"Profile"
     },
     {
         id:"safari",
-        icon:safari
+        icon:safari,
+        name:"Blogs"
     },
     {
         id:"terminal",
-        icon:terminal
+        icon:terminal,
+        name:"Terminal"
     }
 ]
 
@@ -480,5 +486,21 @@ export const projects = [
             "and React Router Dom. Implemented all functions to play and pause songs and create playlists. UI inspired from spotify.",
         githubLink:"http:localhost//3000",
         video:'video url'
+    }
+]
+
+// Achivements
+export const AchivementsArray = [
+    {
+        id:1,
+        name:"30 Days Of Code",
+        org:"HackerRank",
+        url:"https://github.com"
+    },
+    {
+        id:2,
+        name:"10 Days of JS",
+        org:"HackerRank",
+        url:"http://github.com"
     }
 ]

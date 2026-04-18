@@ -47,6 +47,8 @@ const WindowWrapper = (Component, windowKey) => {
                     dragRef.current = Draggable.create(el, {
                         type: "x,y",
                         bounds: window,
+                        cursor:'default',
+                        activeCursor:'default',
                         onPress: () => focusWindow(windowKey),
                     })[0];
                 });

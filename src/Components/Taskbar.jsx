@@ -89,7 +89,7 @@ const Taskbar = () => {
                         src={items.icon}
                         alt=""
                         data-tooltip-id="my-tooltip"
-                        data-tooltip-content={items.id}
+                        data-tooltip-content={items.name}
                     />
                 </div>
             ))}
