@@ -18,7 +18,7 @@ const Settings = () => {
     return (
         <div className='mac flex relative h-[400px] w-[700px] rounded-[8px] overflow-hidden'>
             <div className="flex-1">
-                <Sidebar/>
+                <Sidebar target="settings"/>
 
             </div>
 

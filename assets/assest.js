@@ -30,9 +30,8 @@ const colorVariants = {
 import work from '../assets/Icons/work.svg'
 import trash from '../assets/Icons/trash.svg'
 import atom from '../assets/Icons/atom.svg'
-
 import aboutMe from '../assets/Icons/info.svg'
-import cv from './Social icons/resume.png'
+import cv from "../assets/Icons/file.svg"
 
 export const sidebarIcons = [
     {
@@ -45,7 +44,7 @@ export const sidebarIcons = [
     },
     {
         name:"Resume",
-        icon:resume
+        icon:cv
     },
     {
         name:"About me",
