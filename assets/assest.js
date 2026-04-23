@@ -13,7 +13,7 @@ import profile from "./Profile/photo_6309939572606963276_y.jpg"
 import mode from "./Icons/mode.svg"
 import share from "./Icons/share.svg"
 
-export {background ,Folder,profile,mode,files,photos,setting,contact,share}
+export {background ,Folder,profile,mode,files,photos,setting,contact,share,safari}
 
 //color vairents
 
@@ -30,8 +30,9 @@ const colorVariants = {
 import work from '../assets/Icons/work.svg'
 import trash from '../assets/Icons/trash.svg'
 import atom from '../assets/Icons/atom.svg'
-import resume from '../assets/Icons/file.svg'
+
 import aboutMe from '../assets/Icons/info.svg'
+import cv from './Social icons/resume.png'
 
 export const sidebarIcons = [
     {
@@ -49,7 +50,8 @@ export const sidebarIcons = [
     {
         name:"About me",
         icon:aboutMe
-    }
+    },
+
 ]
 
 export const footerIcons = [
@@ -76,7 +78,7 @@ export const footerIcons = [
     {
         id:"safari",
         icon:safari,
-        name:"Blogs"
+        name:"Projects"
     },
     {
         id:"terminal",
@@ -397,6 +399,7 @@ import instagram from "./Social icons/instagram.png"
 import linkedin from "./Social icons/linkedin.png"
 import threads from "./Social icons/threads.png"
 import gmail from "./Social icons/gmail.png"
+import resume from "./Social icons/resume.png"
 
 export{github ,instagram,facebook,linkedin,threads,}
 
@@ -430,6 +433,12 @@ export const social = [
         name:"Email",
         url:"lakshanjayalath171@gmail.com",
         image:gmail,
+    },
+    {
+        id:6,
+        name: "Resume",
+        url: "http://localhost",
+        image:resume,
     }
 
 ]
@@ -445,7 +454,7 @@ export const projects = [
             "with type script. Node and Express run the backend and mongoDB gives the database support." +
             "Additionally i use Soket.io to implemet a realtime messaging feature. It gives the realtime chat messaging withou" +
             "refresh web browser.Also i use the bcryptJs for encrypt user password and use JWT(json web token).",
-        githubLink:"http:localhost//3000",
+        githubLink:"https://github.com/LakshanJayalath171/Chat-app",
         video:'video url'
     },
     {
@@ -455,7 +464,7 @@ export const projects = [
         description:"I created this project to understand how works web animation with GSAP library. I created the" +
             "gaming landing page with gsap plugin. The main force of this project is how works web animation. I use " +
             "scrolltrigger animations , basic GSAP animations like from and to , GSAP timeline animations.",
-        githubLink:"http:localhost//3000",
+        githubLink:"https://github.com/LakshanJayalath171/Animated_landing_page",
         video:'video url'
     },
     {
@@ -466,7 +475,7 @@ export const projects = [
             "videos , like, comment , share count for video and also subscribers count of channels. UI inspipred by " +
             "YouTube application and main reason for create that project to understand react compoenent and basic hooks " +
             "like useState , useEffect. ",
-        githubLink:"http:localhost//3000",
+        githubLink:"https://github.com/LakshanJayalath171/YouTube_Clone",
         video:'videourl'
     },
     {
@@ -475,7 +484,7 @@ export const projects = [
         techStack:'React + GSAP',
         description:"I created a portfolio for showcase my works using React + GSAP. React created the UI and " +
             "added animations using GSAP library.",
-        githubLink:"http:localhost//3000",
+        githubLink:"https://github.com/LakshanJayalath171/Mac_os_portfolio",
         video:'video url'
     },
     {
@@ -484,7 +493,7 @@ export const projects = [
         techStack:'React + Tailwind',
         description:"I created spotify clone with hard coded data to understand how Works React compoents, taiwind classes" +
             "and React Router Dom. Implemented all functions to play and pause songs and create playlists. UI inspired from spotify.",
-        githubLink:"http:localhost//3000",
+        githubLink:"https://github.com/LakshanJayalath171/spotify_clone",
         video:'video url'
     }
 ]

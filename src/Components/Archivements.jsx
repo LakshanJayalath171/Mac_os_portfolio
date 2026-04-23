@@ -43,8 +43,8 @@ const Archivements = () => {
                         <img src={files} className="w-18 h-18"/>
                     </div>
                     <div className="relative">
-                        <h3 className="poppins-bold text-gray-600 text-2xl">Archivements</h3>
-                        <p className="text-gray-500">This is my archivements</p>
+                        <h3 className="poppins-bold text-gray-600 text-2xl">Achivements</h3>
+                        <p className="text-gray-500">This is my achivements</p>
                     </div>
                 </div>
 

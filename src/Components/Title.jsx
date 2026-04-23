@@ -26,13 +26,10 @@ const Title = () => {
             <div className="flex items-center justify-between gap-2">
                 <AppleIcon className="text-white text-2xl ml-5 mr-4" />
 
-                {title_items.map((items,index)=>(
-                    <div key={index} className="flex justify-between gap-3">
-                        <div>
-                            <h4 className="poppins-regular text-white text-[15px]">{items}</h4>
-                        </div>
-                    </div>
-                ))}
+                <div className="flex items-center justify-between gap-3">
+                    <h3 className="poppins-bold text-blue-50">Lakshan's Portfolio</h3>
+
+                </div>
 
             </div>
 

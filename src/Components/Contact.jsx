@@ -4,13 +4,17 @@ import {share, social} from "../../assets/assest.js";
 import WindowWrapper from "../hoc/WindowWrapper.jsx";
 import WindowControls from "./WindowControls.jsx";
 import {MdOutlineLaptopMac} from "react-icons/md";
-
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const Contact = () => {
+
+    const [toggle ,setToggle] = useState(false)
 
     const [pannel,setpannel] = useState(1);
     const [result, setResult] = useState("");
 
+    console.log(toggle)
     const onSubmit = async (event) => {
         event.preventDefault();
         setResult("Sending....");
@@ -34,10 +38,10 @@ const Contact = () => {
 
 
     return (
-        <div className='mac flex relative h-[400px] w-[700px] rounded-[8px] '>
+        <div className={`mac flex relative h-[400px] w-[700px] rounded-[8px]`}>
 
             {/*First division */}
-            <div className="flex-1 ml-2 mr-2 " >
+            <div className={`flex-1 ml-2 mr-2 ${toggle == false?"":"hidden"}`} >
                 <div className="flex justify-between">
                     <WindowControls target="contact"/>
                     <img src={share} alt="Share"/>
@@ -60,6 +64,10 @@ const Contact = () => {
 
             {/*second division */}
             <div className="flex-1 bg-blue-50 rounded-tr-[8px] rounded-br-[8px] overflow-y-scroll relative">
+                <div className="p-1 w-[10px] h-[10px] cursor-pointer" onClick={()=>setToggle(!toggle)}>
+                    {toggle? <ArrowForwardIosIcon className="text-gray-600"/>:<ArrowBackIosNewIcon className="text-gray-600"/>}
+
+                </div>
                 <div className="items-center justify-center">
                     {social.map((items,index)=>(
                         <div className={`${pannel == items.id ? "":"hidden"}`}>
@@ -85,7 +93,11 @@ const Contact = () => {
                                     </form>
                                 </div>
 
-                                <div className={`flex w-full items-center justify-center ${pannel == 5? "hidden":""}`}>
+                                <div className={`${pannel==6?"":"hidden"}`}>
+                                    <iframe src="assets/CV/Lakshan jayalathCV.pdf" height={`${toggle ? "700px":""}`} width={`${toggle? "650px":""}`} />
+                                </div>
+
+                                <div className={`flex w-full items-center justify-center ${pannel == 5 || pannel== 6? "hidden":""}`}>
                                     <button className="w-24 h-10 rounded-3xl bg-blue-600"><a href={items.url}>Connect</a></button>
                                 </div>
                             </div>
@@ -93,11 +105,7 @@ const Contact = () => {
                     ))}
 
                 </div>
-                <div className="absolute bottom-0 right-0 flex items-center justify-center">
 
-                    <MdOutlineLaptopMac className="text-gray-900"/>
-                    <p className="poppins-bold text-gray-900 mr-1 ml-2 text-[10px]">mac</p>
-                </div>
             </div>
 
         </div>
