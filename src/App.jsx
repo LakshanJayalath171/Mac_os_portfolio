@@ -44,7 +44,7 @@ const App = () => {
   return (
     <div>
 
-      <div className=" relative min-h-screen min-w-screen bg-[url(assets/Icons/wallpaper.png)] bg-cover inset-0 z-0">
+      <div className=" relative min-h-screen min-w-screen bg-[url(Public/wallpaper.png)] bg-cover inset-0 z-0">
 
           <div className={`absolute top-0 left-0 z-50 ${value == 100 ? "hidden":""}`}>
               <div className="w-screen h-screen bg-black flex items-center justify-center">
