@@ -13,6 +13,7 @@ import Terminal from "./Components/Terminal.jsx";
 import Archivements from "./Components/Archivements.jsx";
 import Blogs from "./Components/Blogs.jsx";
 
+import wallpaper from "../assets/Icons/wallpaper.png"
 
 import  {useEffect, useState} from 'react'
 import { FaApple } from "react-icons/fa";
@@ -44,7 +45,7 @@ const App = () => {
   return (
     <div>
 
-      <div className=" relative min-h-screen min-w-screen bg-[url(Public/wallpaper.png)] bg-cover inset-0 z-0">
+      <div className="relative min-h-screen min-w-screen  bg-cover inset-0 z-0" style={{backgroundImage: `url(${wallpaper})`}}>
 
           <div className={`absolute top-0 left-0 z-50 ${value == 100 ? "hidden":""}`}>
               <div className="w-screen h-screen bg-black flex items-center justify-center">

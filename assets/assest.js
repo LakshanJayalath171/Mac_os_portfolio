@@ -1,7 +1,7 @@
 // icons 
 
 import background from "./Icons/background.jpg"
-import wallpaper from "../Public/wallpaper.png"
+import wallpaper from "./Icons/wallpaper.png"
 import contact from "./Icons/Contact.png"
 import files from "./Icons/Files.png"
 import Folder from "./Icons/Folder.png"
