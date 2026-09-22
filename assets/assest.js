@@ -447,14 +447,84 @@ export const social = [
 export const projects = [
     {
         id:1,
-        name:"Realtime Chat Application",
-        techStack:'MERN Stack',
-        description:"I created the realtime chat application using MERN stack. UI created with the React framework" +
-            "with type script. Node and Express run the backend and mongoDB gives the database support." +
-            "Additionally i use Soket.io to implemet a realtime messaging feature. It gives the realtime chat messaging withou" +
-            "refresh web browser.Also i use the bcryptJs for encrypt user password and use JWT(json web token).",
-        githubLink:"https://github.com/LakshanJayalath171/Chat-app",
-        video:'video url'
+        name:'LearnStack ',
+        shortDescription:"Fullstack learning management system",
+        techStack:"NextJS",
+        technologies:[
+            "NextJS",
+            "Express Js",
+            "MongoDB",
+            "Tailwind CSS + Lucid Icons",
+            "React Native",
+            "Clerk Authentication",
+            "Node.js",
+            "Shadcn UI"
+        ],
+        status:"On going",
+        description: "I created this project as my first SAAS start up. I created 50+ UI and in this project " +
+            ". Teachers/ instructor can make a course and also they have a dashboard for track the details like " +
+            "enrolled students, total revenue etc. Students can enroll course and pay to them with strip payment method" +
+            "Students can see the details like enrolled courses, course progress , achivements and certification. After complete the " +
+            "course students can earn certificate. I mainly use next js for this project." +
+            "Tailwind css for the modern styles and lucide react for the icons. Authentication provide by the clerk. Node+" +
+            "next js handle the backend and mongodb use as the database. I use react native + native wind for develop mobile app. ",
+        liveDemo:'N/A',
+        link:'',
+    },
+    {
+        id:2,
+        name:"MediLink",
+        shortDescription:"Fullstack Doctor appointment booking system",
+        techStack:"MERN Stack",
+        technologies:[
+            "React",
+            "Tailwind CSS",
+            "Express Js",
+            "MongoDB",
+            "Zustand",
+            "Node. Js",
+            "JWT + Bycrypt"
+        ],
+        status:"Finished",
+        description: "MediLink is a full-stack doctor appointment booking system built using the MERN stack. The platform provides a seamless experience for patients to discover doctors, view doctor profiles, and book appointments online. Doctors can manage their profiles, schedules, and appointments through a dedicated dashboard.\n" +
+            "\n" +
+            "The frontend was developed with React and Tailwind CSS, while the backend is powered by Node.js, Express.js, and MongoDB. Zustand is used for efficient state management, and JWT with bcrypt provides secure authentication and password protection.\n" +
+            "\n" +
+            "The application includes 20+ responsive pages covering patient and doctor workflows, authentication, doctor management, appointment booking, dashboards, and other essential features.",
+        liveDemo:'N/A',
+        link:'https://github.com/LakshanJayalath171/MediLink---Healthcare-platform-',
+    },
+    {
+        id:3,
+        name:'Weather App',
+        shortDescription:"Weather App",
+        techStack:"React Native",
+        technologies:[
+            "React Native",
+            "Native wind",
+            "Open Metio API"
+        ],
+        status:"Finished",
+        description: "A modern weather application built with React Native and NativeWind, powered by the Open-Meteo API. The app uses the user's current location to display real-time weather conditions, including temperature, feels-like temperature, humidity, wind speed, and weather conditions.\n" +
+            "\n" +
+            "Users can also search for locations and view current weather along with a 7-day forecast. The application features a clean, responsive interface with weather-specific visuals and a smooth mobile experience.\n",
+        liveDemo:'N/A',
+        link:'https://github.com/LakshanJayalath171/Weather_station_app',
+    },
+    {
+        id:4,
+        name:'Movie App',
+        shortDescription:"",
+        techStack:"React Native",
+        technologies:[
+            "React Native",
+            "Native wind",
+            "TMDB Database"
+        ],
+        status:"Finished",
+        description: "",
+        liveDemo: "N/A",
+        link:'',
     },
     {
         id:2,
