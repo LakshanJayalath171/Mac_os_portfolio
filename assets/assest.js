@@ -469,7 +469,7 @@ export const projects = [
             "Tailwind css for the modern styles and lucide react for the icons. Authentication provide by the clerk. Node+" +
             "next js handle the backend and mongodb use as the database. I use react native + native wind for develop mobile app. ",
         liveDemo:'N/A',
-        link:'',
+        link:'N/A',
     },
     {
         id:2,
@@ -522,48 +522,167 @@ export const projects = [
             "TMDB Database"
         ],
         status:"Finished",
-        description: "",
+        description: "A mobile movie discovery application built with React Native" +
+            " and NativeWind, using the TMDB API to fetch real-time movie data. " +
+            "Users can explore popular and trending movies, search for movies, and " +
+            "view detailed information including ratings, release dates, descriptions, " +
+            "and movie posters. The app features a modern, responsive UI designed for a " +
+            "smooth movie-browsing experience.\n",
         liveDemo: "N/A",
-        link:'',
+        link:'https://github.com/LakshanJayalath171/Movie-Showcase-App',
     },
     {
-        id:2,
-        name:"Animated Landing Page",
-        techStack:'React + GSAP',
+        id:5,
+        name:'LearnStack Blog',
+        shortDescription:"Fullstack blog application",
+        techStack:"MERN Stack",
+        technologies:[
+            "React",
+            "Tailwind CSS",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+        ],
+        status:"Finished",
+        description:"LearnStack Blog is a full-stack blogging platform built using the MERN stack. The application allows users to create, publish, and manage blog posts through a clean and responsive interface.\n" +
+            "\n" +
+            "The frontend is developed with React and Tailwind CSS, while Node.js and Express.js handle the backend API and server-side logic. MongoDB is used for storing user and blog data. The project demonstrates full-stack development concepts including CRUD operations, REST APIs, database integration, and responsive UI development.\n",
+        liveDemo:'N/A',
+        link:'https://github.com/LakshanJayalath171/Blog-Application',
+    },
+    {
+        id:6,
+        name:"Velvet Pour",
+        shortDescription:"Animated landing page",
+        techStack:'React',
+        technologies:[
+            "React",
+            "Tailwind css",
+            "GSAP"
+        ],
+        status:"Finished",
         description:"I created this project to understand how works web animation with GSAP library. I created the" +
             "gaming landing page with gsap plugin. The main force of this project is how works web animation. I use " +
             "scrolltrigger animations , basic GSAP animations like from and to , GSAP timeline animations.",
-        githubLink:"https://github.com/LakshanJayalath171/Animated_landing_page",
-        video:'video url'
+        liveDemo:'N/A',
+        link:"https://github.com/LakshanJayalath171/Animated_landing_page",
     },
     {
-        id:3,
+        id:7,
         name:"Yotube Clone",
+        shortDescription:"",
         techStack:'React',
+        technologies:[
+            "React",
+            "Tailwind CSS",
+        ],
+        status:"Finished",
         description:"I creted this project usin REACT and youtube API. Its gives a basic youtube features like waich" +
             "videos , like, comment , share count for video and also subscribers count of channels. UI inspipred by " +
             "YouTube application and main reason for create that project to understand react compoenent and basic hooks " +
             "like useState , useEffect. ",
-        githubLink:"https://github.com/LakshanJayalath171/YouTube_Clone",
-        video:'videourl'
+        liveDemo:'N/A',
+        link:"https://github.com/LakshanJayalath171/YouTube_Clone",
     },
     {
-        id:4,
-        name:"Apple MacOS inspired portfolio",
-        techStack:'React + GSAP',
-        description:"I created a portfolio for showcase my works using React + GSAP. React created the UI and " +
-            "added animations using GSAP library.",
-        githubLink:"https://github.com/LakshanJayalath171/Mac_os_portfolio",
-        video:'video url'
+        id:8,
+        name:"My Portfolio",
+        shortDescription:"Apple macbook inspired portfolio",
+        techStack:'React',
+        technologies:[
+            "React",
+            "Tailwind CSS",
+            "GSAP",
+        ],
+        description: "An Apple MacBook-inspired personal portfolio website built with React, Tailwind CSS, and GSAP. The portfolio is designed to showcase my projects, technical skills, and development experience through a modern and interactive interface.\n" +
+            "\n" +
+            "React is used to build the UI and component structure, while Tailwind CSS provides responsive styling and a clean visual design. GSAP is used to create smooth animations and interactive effects, giving the portfolio a dynamic and engaging user experience.\n",
+        liveDemo: "N/A",
+        link:"https://github.com/LakshanJayalath171/Mac_os_portfolio",
     },
     {
-        id:5,
+        id:9,
+        name:"MacBook Website",
+        shortDescription:"3D website built with React Native",
+        techStack:'React',
+        technologies:[
+            "React",
+            "Tailwind CSS",
+            "GSAP",
+            "Three Js"
+        ],
+        status:"Finished",
+        description:"A modern 3D MacBook product website built with React, Tailwind CSS, GSAP, and Three.js. The project focuses on creating an immersive product experience with interactive 3D models, smooth animations, and scroll-based effects.\n" +
+            "\n" +
+            "React is used to build the component-based UI, Tailwind CSS provides responsive styling, Three.js handles the 3D product visualization, and GSAP powers smooth animations and interactive transitions. The website is designed to deliver a premium, Apple-inspired user experience.\n",
+        liveDemo:'N/A',
+        link:'https://github.com/LakshanJayalath171/Apple-website-clone',
+    },
+    {
+        id:10,
+        name:"Redefine",
+        shortDescription:"Gaming ,animated landing page",
+        techStack:'React',
+        technologies: [
+            "React",
+            "Tailwind CSS",
+            "GSAP",
+        ],
+        status:"Finished",
+        description:"An interactive and animated gaming landing page built with React, Tailwind CSS, and GSAP. The project focuses on creating an engaging gaming-inspired experience with modern UI design, smooth animations, and dynamic visual effects.\n" +
+            "\n" +
+            "React is used to build the component-based interface, Tailwind CSS provides responsive styling, and GSAP is used to create smooth transitions, scroll animations, and interactive effects. The project demonstrates modern frontend development and animation techniques for creating visually engaging web experiences.\n",
+        liveDemo:'N/A',
+        link: "https://github.com/LakshanJayalath171/Animated_landing_page"
+    },
+    {
+        id:11,
         name:"Spotify Clone",
-        techStack:'React + Tailwind',
+        shortDescription:"Spotify Clone website with static data",
+        techStack: "React",
+        technologies: [
+            "React",
+            "Tailwind CSS",
+        ],
+        status:"Finished",
         description:"I created spotify clone with hard coded data to understand how Works React compoents, taiwind classes" +
             "and React Router Dom. Implemented all functions to play and pause songs and create playlists. UI inspired from spotify.",
-        githubLink:"https://github.com/LakshanJayalath171/spotify_clone",
-        video:'video url'
+        liveDemo:'N/A',
+        link:"https://github.com/LakshanJayalath171/spotify_clone",
+    },
+    {
+        id:12,
+        name:"Airpods website",
+        shortDescription:"Animated landing page",
+        techStack:'React',
+        technologies:[
+            "React",
+            "Tailwind CSS",
+            "GSAP",
+        ],
+        status:"Finished",
+        description:"An animated AirPods product landing page built with React, Tailwind CSS, and GSAP. The project focuses on creating a modern, Apple-inspired product experience with smooth animations, interactive elements, and engaging scroll-based effects.\n" +
+            "\n" +
+            "React is used to build the UI and component structure, Tailwind CSS handles responsive styling, and GSAP powers the animations and transitions. The project demonstrates the use of modern frontend technologies to create a polished and interactive product showcase.\n",
+        liveDemo:'N/A',
+        link:"https://github.com/LakshanJayalath171/Airpods_clone_Site",
+    },
+    {
+        id:13,
+        name:"Juice landing page",
+        shortDescription:"Animated landing page",
+        techStack:'React',
+        technologies:[
+            "React",
+            "Tailwind CSS",
+            "GSAP",
+        ],
+        status:"Finished",
+        description:"An engaging and visually appealing juice product landing page built with React, Tailwind CSS, and GSAP. The project focuses on creating a vibrant product presentation with smooth animations, interactive elements, and modern responsive design.\n" +
+            "\n" +
+            "React is used to build the UI, Tailwind CSS provides responsive styling, and GSAP powers smooth transitions and scroll-based animations. The project demonstrates modern frontend development techniques for creating attractive and interactive product landing pages.\n",
+        liveDemo:'N/A',
+        link:"https://github.com/LakshanJayalath171/mangoDrink_website",
     }
 ]
 
