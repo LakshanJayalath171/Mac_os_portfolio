@@ -9,7 +9,7 @@ const FolderCard = ({title}) => {
                 <img src={Folder} className="w-24 h-20"/>
             </div>
             <div className="w-full flex items-center justify-center">
-                <h3 className="poppins-bold text-[13px]">{title.toString().slice(0,15)}</h3>
+                <h3 className="poppins-bold text-[13px] text-black/80">{title.toString().slice(0,15)}</h3>
             </div>
         </div>
     )

@@ -1,41 +1,50 @@
-import React from 'react'
+import React, {useState} from 'react'
 import WindowWrapper from "../hoc/WindowWrapper.jsx";
 import Sidebar from "./Sidebar.jsx";
 import {projects, safari} from "../../assets/assest.js";
 import {AiFillFolder} from "react-icons/ai";
 import FolderCard from "./FolderCard.jsx";
+import Project_card from "./Project_card.jsx";
+import ProjectCard from "./Project_card.jsx";
+import { MdArrowBackIosNew } from "react-icons/md";
 
 const Projects = () => {
+    const [details,setDetails] = useState(false);
+
     return (
-        <div className="w-[700px] h-[400px] rounded-3xl flex">
+        <div className="w-[800px] h-[400px] rounded-3xl flex">
             <div className="mac flex-1 rounded-tl-[8px] rounded-bl-[8px]">
                 <Sidebar target={"safari"}/>
             </div>
-            <div className="flex-3 bg-blue-50 rounded-tr-[8px] rounded-br-[8px] w-full overflow-y-scroll">
-                <div className="flex w-full">
-                    <div className="mt-10 ml-10 mr-6 flex-1 ">
-                        <img className="w-30 h-30" src={safari}/>
+            {details ? <div className="flex-3 bg-blue-50 rounded-tr-[8px] rounded-br-[8px] w-full overflow-y-scroll">
+                <button className="p-3" onClick={()=>setDetails(!details)}>
+                    <MdArrowBackIosNew/>
+                </button>
+                <Project_card/>
+            </div>:<div onClick={()=>setDetails(true)} className="flex-3 bg-blue-50 rounded-tr-[8px] rounded-br-[8px] w-full overflow-y-scroll"><div className="">
+                {details ? <ProjectCard/> : <div>
+                    <div className="flex w-full">
+                        <div className="mt-10 ml-10 mr-6 flex-1 ">
+                            <img className="w-30 h-30" src={safari}/>
+                        </div>
+                        <div className="flex-2">
+                            <h3 className="poppins-bold mt-10 ml-4 text-[25px] text-gray-600">My Projects</h3>
+                            <p className="text-gray-400 ml-4">My projects and contributions</p>
+                        </div>
+
                     </div>
-                    <div className="flex-2">
-                        <h3 className="poppins-bold mt-10 ml-4 text-[25px] text-gray-600">My Projects</h3>
-                        <p className="text-gray-400 ml-4">My projects and contributions</p>
+
+                    <hr className="m-4"/>
+
+                    {/*projects section */}
+                    <div className="grid grid-cols-4">
+                        {projects.map((items,index)=>(
+                            <div key={index} className="mt-4"><FolderCard title={items.name}/></div>
+                        ))}
                     </div>
+                </div>}
 
-                </div>
-
-                <hr className="m-4"/>
-
-                {/*projects section */}
-                <div className="grid grid-cols-4">
-                    {projects.map((items,index)=>(
-                        <a href={items.githubLink} target="_blank">
-                            <div className="mt-4"><FolderCard title={items.name}/></div>
-                        </a>
-
-                    ))}
-                </div>
-            </div>
-
+            </div></div>}
         </div>
     )
 }

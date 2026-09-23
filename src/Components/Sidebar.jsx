@@ -5,7 +5,7 @@ import {Folder} from "../../assets/assest.js"
 
 const Sidebar = ({target}) => {
     return (
-        <div >
+        <div className="w-full h-full overflow-auto ">
             <div className='w-full'>
                 <WindowControls target={target}/>
                 <hr className='w-full ml-2 mr-2 text-gray-600' />
