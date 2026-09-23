@@ -10,17 +10,27 @@ import { MdArrowBackIosNew } from "react-icons/md";
 
 const Projects = () => {
     const [details,setDetails] = useState(false);
+    const [selectedProject, setSelectedProject] = useState(null);
 
+    const onclickHandler = (index) => {
+        setDetails(!details);
+        if(index == null){
+            setSelectedProject(null);
+        }
+        setSelectedProject(projects[index])
+    }
+    console.log(selectedProject);
     return (
         <div className="w-[800px] h-[400px] rounded-3xl flex">
             <div className="mac flex-1 rounded-tl-[8px] rounded-bl-[8px]">
                 <Sidebar target={"safari"}/>
             </div>
             {details ? <div className="flex-3 bg-blue-50 rounded-tr-[8px] rounded-br-[8px] w-full overflow-y-scroll">
-                <button className="p-3" onClick={()=>setDetails(!details)}>
+                <button className="p-3" onClick={()=>onclickHandler(null)}>
                     <MdArrowBackIosNew/>
                 </button>
-                <Project_card/>
+                <Project_card name={selectedProject.name} link={selectedProject.link} description={selectedProject.description} liveDemo={selectedProject.liveDemo} shortDescription={selectedProject.shortDescription} status={selectedProject.status} technologies={selectedProject.technologies} techStack={selectedProject.techStack}/>
+
             </div>:<div onClick={()=>setDetails(true)} className="flex-3 bg-blue-50 rounded-tr-[8px] rounded-br-[8px] w-full overflow-y-scroll"><div className="">
                 {details ? <ProjectCard/> : <div>
                     <div className="flex w-full">
@@ -39,7 +49,7 @@ const Projects = () => {
                     {/*projects section */}
                     <div className="grid grid-cols-4">
                         {projects.map((items,index)=>(
-                            <div key={index} className="mt-4"><FolderCard title={items.name}/></div>
+                            <div onClick={()=>onclickHandler(index)} key={index} className="mt-4"><FolderCard title={items.name}/></div>
                         ))}
                     </div>
                 </div>}
