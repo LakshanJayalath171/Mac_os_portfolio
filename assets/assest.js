@@ -454,13 +454,14 @@ export const projects = [
             "NextJS",
             "Express Js",
             "MongoDB",
-            "Tailwind CSS + Lucid Icons",
+            "Tailwind CSS",
+            "Lucid Icons",
             "React Native",
-            "Clerk Authentication",
+            "Clerk Auth",
             "Node.js",
             "Shadcn UI"
         ],
-        status:"On going",
+        status:"ongoing",
         description: "I created this project as my first SAAS start up. I created 50+ UI and in this project " +
             ". Teachers/ instructor can make a course and also they have a dashboard for track the details like " +
             "enrolled students, total revenue etc. Students can enroll course and pay to them with strip payment method" +
@@ -485,7 +486,7 @@ export const projects = [
             "Node. Js",
             "JWT + Bycrypt"
         ],
-        status:"Finished",
+        status:"finished",
         description: "MediLink is a full-stack doctor appointment booking system built using the MERN stack. The platform provides a seamless experience for patients to discover doctors, view doctor profiles, and book appointments online. Doctors can manage their profiles, schedules, and appointments through a dedicated dashboard.\n" +
             "\n" +
             "The frontend was developed with React and Tailwind CSS, while the backend is powered by Node.js, Express.js, and MongoDB. Zustand is used for efficient state management, and JWT with bcrypt provides secure authentication and password protection.\n" +
@@ -521,7 +522,7 @@ export const projects = [
             "Native wind",
             "TMDB Database"
         ],
-        status:"Finished",
+        status:"finished",
         description: "A mobile movie discovery application built with React Native" +
             " and NativeWind, using the TMDB API to fetch real-time movie data. " +
             "Users can explore popular and trending movies, search for movies, and " +
@@ -543,7 +544,7 @@ export const projects = [
             "Express.js",
             "MongoDB",
         ],
-        status:"Finished",
+        status:"finished",
         description:"LearnStack Blog is a full-stack blogging platform built using the MERN stack. The application allows users to create, publish, and manage blog posts through a clean and responsive interface.\n" +
             "\n" +
             "The frontend is developed with React and Tailwind CSS, while Node.js and Express.js handle the backend API and server-side logic. MongoDB is used for storing user and blog data. The project demonstrates full-stack development concepts including CRUD operations, REST APIs, database integration, and responsive UI development.\n",
@@ -560,7 +561,7 @@ export const projects = [
             "Tailwind css",
             "GSAP"
         ],
-        status:"Finished",
+        status:"finished",
         description:"I created this project to understand how works web animation with GSAP library. I created the" +
             "gaming landing page with gsap plugin. The main force of this project is how works web animation. I use " +
             "scrolltrigger animations , basic GSAP animations like from and to , GSAP timeline animations.",
@@ -576,7 +577,7 @@ export const projects = [
             "React",
             "Tailwind CSS",
         ],
-        status:"Finished",
+        status:"finished",
         description:"I creted this project usin REACT and youtube API. Its gives a basic youtube features like waich" +
             "videos , like, comment , share count for video and also subscribers count of channels. UI inspipred by " +
             "YouTube application and main reason for create that project to understand react compoenent and basic hooks " +
@@ -594,6 +595,7 @@ export const projects = [
             "Tailwind CSS",
             "GSAP",
         ],
+        status: 'finished',
         description: "An Apple MacBook-inspired personal portfolio website built with React, Tailwind CSS, and GSAP. The portfolio is designed to showcase my projects, technical skills, and development experience through a modern and interactive interface.\n" +
             "\n" +
             "React is used to build the UI and component structure, while Tailwind CSS provides responsive styling and a clean visual design. GSAP is used to create smooth animations and interactive effects, giving the portfolio a dynamic and engaging user experience.\n",
@@ -603,7 +605,7 @@ export const projects = [
     {
         id:9,
         name:"MacBook Website",
-        shortDescription:"3D website built with React Native",
+        shortDescription:"3D website built with React",
         techStack:'React',
         technologies:[
             "React",
@@ -611,7 +613,7 @@ export const projects = [
             "GSAP",
             "Three Js"
         ],
-        status:"Finished",
+        status:"finished",
         description:"A modern 3D MacBook product website built with React, Tailwind CSS, GSAP, and Three.js. The project focuses on creating an immersive product experience with interactive 3D models, smooth animations, and scroll-based effects.\n" +
             "\n" +
             "React is used to build the component-based UI, Tailwind CSS provides responsive styling, Three.js handles the 3D product visualization, and GSAP powers smooth animations and interactive transitions. The website is designed to deliver a premium, Apple-inspired user experience.\n",
@@ -628,7 +630,7 @@ export const projects = [
             "Tailwind CSS",
             "GSAP",
         ],
-        status:"Finished",
+        status:"finished",
         description:"An interactive and animated gaming landing page built with React, Tailwind CSS, and GSAP. The project focuses on creating an engaging gaming-inspired experience with modern UI design, smooth animations, and dynamic visual effects.\n" +
             "\n" +
             "React is used to build the component-based interface, Tailwind CSS provides responsive styling, and GSAP is used to create smooth transitions, scroll animations, and interactive effects. The project demonstrates modern frontend development and animation techniques for creating visually engaging web experiences.\n",
@@ -644,7 +646,7 @@ export const projects = [
             "React",
             "Tailwind CSS",
         ],
-        status:"Finished",
+        status:"finished",
         description:"I created spotify clone with hard coded data to understand how Works React compoents, taiwind classes" +
             "and React Router Dom. Implemented all functions to play and pause songs and create playlists. UI inspired from spotify.",
         liveDemo:'N/A',
@@ -677,7 +679,7 @@ export const projects = [
             "Tailwind CSS",
             "GSAP",
         ],
-        status:"Finished",
+        status:"finished",
         description:"An engaging and visually appealing juice product landing page built with React, Tailwind CSS, and GSAP. The project focuses on creating a vibrant product presentation with smooth animations, interactive elements, and modern responsive design.\n" +
             "\n" +
             "React is used to build the UI, Tailwind CSS provides responsive styling, and GSAP powers smooth transitions and scroll-based animations. The project demonstrates modern frontend development techniques for creating attractive and interactive product landing pages.\n",

@@ -7,7 +7,7 @@ const ProjectCard = ({name,shortDescription,techStack,technologies,description,s
                 <div className="flex items-center justify-start gap-2">
                     <h1 className="text-2xl text-black poppins-bold">{name}</h1>
                     <div className="flex items-center justify-start">
-                        {status ==="ongoing" ? <div className="bg-green-500/40 px-4 py-1 rounded-2xl text-xs">ongoing</div>:<div className="bg-blue-500/40 px-4 py-1 rounded-2xl text-xs">finished</div>}
+                        {status ==="ongoing" ? <div className="bg-blue-500/40 px-4 py-1 rounded-2xl text-xs">ongoing</div>:<div className="bg-green-500/40 px-4 py-1 rounded-2xl text-xs">finished</div>}
                     </div>
                 </div>
                 <p className="text-black/60 text-xs poppins-light">{shortDescription}</p>
@@ -15,9 +15,12 @@ const ProjectCard = ({name,shortDescription,techStack,technologies,description,s
                 <div className="mt-4">
                     <div>
                         <p className="text-black poppins-bold text-xs">{techStack}</p>
-                        <div className="flex items-center justify-start gap-3 mt-1">
+                        <div className="mt-1 grid grid-cols-4 gap-2">
                             {technologies.map((items,index)=>(
-                                <div key={index} className="w-full h-full bg-blue-500/40 rounded-2xl px-4 poppins-light flex">{items}</div>
+                                <div key={index} className="bg-blue-500/40 rounded-2xl px-4 poppins-light flex text-center
+                                ">
+                                    {items}
+                                </div>
                             ))}
                         </div>
                     </div>

@@ -26,7 +26,7 @@ const Projects = () => {
                 <Sidebar target={"safari"}/>
             </div>
             {details ? <div className="flex-3 bg-blue-50 rounded-tr-[8px] rounded-br-[8px] w-full overflow-y-scroll">
-                <button className="p-3" onClick={()=>onclickHandler(null)}>
+                <button className="p-3 cursor-pointer" onClick={()=>onclickHandler(null)}>
                     <MdArrowBackIosNew/>
                 </button>
                 <Project_card name={selectedProject.name} link={selectedProject.link} description={selectedProject.description} liveDemo={selectedProject.liveDemo} shortDescription={selectedProject.shortDescription} status={selectedProject.status} technologies={selectedProject.technologies} techStack={selectedProject.techStack}/>
