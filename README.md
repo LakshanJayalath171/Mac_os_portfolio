@@ -9,13 +9,13 @@ Built with React, Tailwind CSS, GSAP and Zustand to explore immersive animations
 
 ## ✨ Features
 
--Apple MacOS inspired user interface with apple liquid glass effect.
--Interactive application windows
--Clean and modern design.
--Smooth scroll triggered animations.
--Smooth transition animations.
--Resusable react component.
--Dock-inspired navigation
+Apple MacOS inspired user interface with apple liquid glass effect.
+Interactive application windows
+Clean and modern design.
+Smooth scroll triggered animations.
+Smooth transition animations.
+Resusable react component.
+Dock-inspired navigation
 
 ## 🛠️ Tech Stack
 
